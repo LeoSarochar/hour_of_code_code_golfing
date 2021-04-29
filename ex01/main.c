@@ -2,9 +2,9 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-void print_result(c, c2)
+void print_result(nb, c, c2)
 {
-    for (int i = 0; i < atoi(av[1]); i++) {
+    for (int i = 0; i < atoi(nb); i++) {
         for (int j = 0; j < i * 2 - 1; j++) {
             if (i % 2 == 0) {
                 printf("%c", c);
@@ -25,6 +25,6 @@ int main(int ac, char **av)
     }
     c = av[2][0];
     c2 = av[3][0];
-    print_result(c, c2);
+    print_result(av[1], c, c2);
     return (0);
 }
