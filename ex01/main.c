@@ -2,15 +2,8 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-int main(int ac, char **av)
+void print_result(c, c2)
 {
-    char c = '*';
-    char c2 = '+';
-    if (ac < 4) {
-        return (84);
-    }
-    c = av[2][0];
-    c2 = av[3][0];
     for (int i = 0; i < atoi(av[1]); i++) {
         for (int j = 0; j < i * 2 - 1; j++) {
             if (i % 2 == 0) {
@@ -21,5 +14,17 @@ int main(int ac, char **av)
         }
         printf("\n");
     }
+}
+
+int main(int ac, char **av)
+{
+    char c = '*';
+    char c2 = '+';
+    if (ac < 4) {
+        return (84);
+    }
+    c = av[2][0];
+    c2 = av[3][0];
+    print_result(c, c2);
     return (0);
 }
