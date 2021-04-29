@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-void print_result(nb, c, c2)
+void print_result(int nb, char c, char c2)
 {
     for (int i = 0; i < atoi(nb); i++) {
         for (int j = 0; j < i * 2 - 1; j++) {
