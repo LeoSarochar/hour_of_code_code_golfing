@@ -9,4 +9,6 @@ end
     word = "Hello\n"
     print(word)
 
-    10.times do|n|puts"Tu peux perdres #{n} cartes mais pas #{n + 1}"end
+    10.times do|n|
+        puts("Tu peux perdres #{n} cartes mais pas #{n + 1}")
+    end
